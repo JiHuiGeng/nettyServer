@@ -1,0 +1,38 @@
+server:
+  port: 8888
+#添加日志记录,用以记录日志打印,用作后续问题跟踪等
+logging:
+  logback:
+    rolling-policy:
+      #      max-file-size: 10
+      max-history: 3
+      clean-history-on-start: true
+  level:
+    root: debug
+  file:
+    path: log
+spring:
+  #增加redis,可以用作缓存控制,等其他功能
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+  #数据库连接
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/netty?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: root
+
+  #增加FlayWay,对数据库操作进行版本控制
+  flyway:
+    schemas: "netty"
+    enabled: true
+    # 此文件路径必须添加,且文件夹内必须有文件
+    locations: classpath:db/migration
+    # 默认就是UTF-8
+    encoding:
+    baseline-on-migrate: true
+    baseline-description:
+    validate-on-migrate: true
+
