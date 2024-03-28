@@ -1,4 +1,4 @@
-<img align="right" width="120" src="">
+<img align="right" width="120" src="src/main/resources/image/pic.jpg">
 
 # A PROJECT FOR STUDY
 
