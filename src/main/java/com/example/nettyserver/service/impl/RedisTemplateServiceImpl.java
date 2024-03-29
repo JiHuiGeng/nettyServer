@@ -2,9 +2,6 @@ package com.example.nettyserver.service.impl;
 
 import com.example.nettyserver.service.RedisTemplateService;
 import lombok.AllArgsConstructor;
-import org.springframework.dao.DataAccessException;
-import org.springframework.data.redis.connection.RedisConnection;
-import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
