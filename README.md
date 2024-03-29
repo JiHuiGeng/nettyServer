@@ -1,4 +1,4 @@
-<img align="right" width="120" src="">
+<img align="right" width="120" src="https://s6.imgcdn.dev/W5Pig.jpg">
 
 # A PROJECT FOR STUDY
 
