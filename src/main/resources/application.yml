@@ -11,6 +11,7 @@ logging:
     root: debug
   file:
     path: log
+
 spring:
   #增加redis,可以用作缓存控制,等其他功能
   redis:

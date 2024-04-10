@@ -1,6 +1,6 @@
-package com.example.nettyserver.config;
+package com.example.nettyserver.server;
 
-import com.example.nettyserver.entity.RedisConfig;
+import com.example.nettyserver.config.RedisConfig;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

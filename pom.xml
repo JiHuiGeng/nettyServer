@@ -97,6 +97,11 @@
       <artifactId>spring-restdocs-mockmvc</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.cloudinary</groupId>
+      <artifactId>cloudinary-http45</artifactId>
+      <version>1.38.0</version>
+    </dependency>
   </dependencies>
 
   <build>
