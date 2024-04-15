@@ -7,6 +7,8 @@ import org.springframework.util.CollectionUtils;
 import java.io.IOException;
 import java.util.Map;
 
+import static com.example.nettyserver.content.Contents.*;
+
 /**
  * 图片/视频云上传保存服务工具类
  *
@@ -14,11 +16,10 @@ import java.util.Map;
  */
 public class CloudinaryUtils {
   private static final Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
-    "cloud_name", "da2gp9dxb",
-    "api_key", "689889562369121",
-    "api_secret", "PzwW3vu-_s7a-luKeqpBsebY-8E"));
+    CLOUD_NAME, CLOUD_NAME_VALUE,
+    API_KEY, API_KEY_VALUE,
+    API_SECRET, API_SECRET_VALUE));
   ;
-  private static final String PUBLIC_ID = "public_id";
 
 
   /**
@@ -33,7 +34,7 @@ public class CloudinaryUtils {
     if (CollectionUtils.isEmpty(upload)) {
       return null;
     }
-    return upload.get("url").toString();
+    return upload.get(URL).toString();
   }
 
 }
